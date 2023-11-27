@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: e2e-fbc-component1
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/dev-release-team-tenant/e2e-fbc-application1/e2e-fbc-component1@sha256:5224f0e852fc19b8c85fcaae86165d4002b85f90b72aec7d8ff1bc1699ca9c0a
+        name: fbc
+        resources: {}
+status: {}
